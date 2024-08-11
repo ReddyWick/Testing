@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-11T13:16:26 IST" name="Suite" finished-at="2024-08-11T13:41:45 IST" duration-ms="1518860">
+    <groups>
+    </groups>
+    <test started-at="2024-08-11T13:16:26 IST" name="chromeTest" finished-at="2024-08-11T13:29:53 IST" duration-ms="807101">
+      <class name="Screenshots.ScreenshotResolutions">
+        <test-method is-config="true" signature="link(java.lang.String,java.lang.String)[pri:0, instance:Screenshots.ScreenshotResolutions@3a44431a]" started-at="2024-08-11T13:16:26 IST" name="link" finished-at="2024-08-11T13:16:34 IST" duration-ms="8240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.getcalley.com/page-sitemap.xml]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- link -->
+        <test-method signature="screenShot()[pri:0, instance:Screenshots.ScreenshotResolutions@3a44431a]" started-at="2024-08-11T13:16:34 IST" name="screenShot" finished-at="2024-08-11T13:29:52 IST" duration-ms="798174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="exit()[pri:0, instance:Screenshots.ScreenshotResolutions@3a44431a]" started-at="2024-08-11T13:29:52 IST" name="exit" finished-at="2024-08-11T13:29:53 IST" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- Screenshots.ScreenshotResolutions -->
+    </test> <!-- chromeTest -->
+    <test started-at="2024-08-11T13:29:53 IST" name="firfoxTest" finished-at="2024-08-11T13:41:45 IST" duration-ms="711707">
+      <class name="Screenshots.ScreenshotResolutions">
+        <test-method is-config="true" signature="link(java.lang.String,java.lang.String)[pri:0, instance:Screenshots.ScreenshotResolutions@273e7444]" started-at="2024-08-11T13:29:53 IST" name="link" finished-at="2024-08-11T13:30:05 IST" duration-ms="11987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.getcalley.com/page-sitemap.xml]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- link -->
+        <test-method signature="screenShot()[pri:0, instance:Screenshots.ScreenshotResolutions@273e7444]" started-at="2024-08-11T13:30:05 IST" name="screenShot" finished-at="2024-08-11T13:41:43 IST" duration-ms="698475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="exit()[pri:0, instance:Screenshots.ScreenshotResolutions@273e7444]" started-at="2024-08-11T13:41:43 IST" name="exit" finished-at="2024-08-11T13:41:45 IST" duration-ms="1239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- Screenshots.ScreenshotResolutions -->
+    </test> <!-- firfoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>

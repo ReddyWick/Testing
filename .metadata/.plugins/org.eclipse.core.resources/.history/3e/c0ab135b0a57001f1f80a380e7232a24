@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  <test thread-count="5" name="chromeTest">
+  	<parameter name="browser" value="chrome"/>
+  	<parameter name="url" value="https://www.getcalley.com/page-sitemap.xml"/>
+    <classes>
+      <class name="Screenshots.ScreenshotResolutions"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="safariTest">
+  	<parameter name="browser" value="safari"/>
+  	<parameter name="url" value="https://www.getcalley.com/page-sitemap.xml"/>
+    <classes>
+      <class name="Screenshots.ScreenshotResolutions"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="firfoxTest">
+  	<parameter name="browser" value="firefox"/>
+  	<parameter name="url" value="https://www.getcalley.com/page-sitemap.xml"/>
+    <classes>
+      <class name="Screenshots.ScreenshotResolutions"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

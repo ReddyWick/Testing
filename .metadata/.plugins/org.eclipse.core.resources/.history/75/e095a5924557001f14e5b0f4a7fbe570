@@ -1,0 +1,51 @@
+package FunctionalTesting;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.time.Duration;
+
+import javax.imageio.ImageIO;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+
+public class FunctionalTestCase {
+	
+	WebDriver driver = new ChromeDriver();
+	
+  @Test
+  public void f() throws InterruptedException, IOException {
+	  driver.get("https://demo.dealsdray.com/");
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	  driver.manage().window().maximize();
+	  Thread.sleep(3000);
+	  
+	  driver.findElement(By.xpath("//input[@id='mui-1']")).sendKeys("prexo.mis@dealsdray.com");
+	  driver.findElement(By.xpath("//input[@id='mui-2']")).sendKeys("prexo.mis@dealsdray.com");
+	  driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
+	  
+	  driver.findElement(By.xpath("//button[@class='MuiButtonBase-root has-submenu compactNavItem css-46up3a']")).click();
+	  driver.findElement(By.xpath("//a[@href='/mis/orders']//button[@name='child']")).click();
+	  driver.findElement(By.xpath("//button[normalize-space()='Add Bulk Orders']")).click();
+	  
+//	  FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\test data\\demo-data.xlsx");
+	  
+	  WebElement upload = driver.findElement(By.linkText(System.getProperty("user.dir")+"\\screenshots\\imagesFunctionalTest\\img.png"));
+	  upload.click();
+//	  driver.findElement(By.xpath("//button[normalize-space()='Import']")).click();
+	  
+//	  File dataImg = new File(System.getProperty("user.dir")+"\\screenshots\\imagesFunctionalTest\\img.png");
+//	  
+//	  Screenshot fullpage = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(2000)).takeScreenshot(driver);
+//	  ImageIO.write(fullpage.getImage(), "png", dataImg);
+	  
+  }
+}
